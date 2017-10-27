@@ -1,7 +1,8 @@
+
 # ! JSDoc 学习笔记
 
 @(002_前端开发)[javascript, jsdoc, esdoc, js 插件, 文档生成, 学习笔记, api 文档]
- 
+
 ---
 
 **修订历史**
@@ -15,7 +16,7 @@
 
 | 版本 | 学习深度 | 学习进度 | 学习范围 |
 | ------ | --- | --- | ------- |
-| v3.5.5 | 90% | 95% | 官方文档 和 css88翻译 | 
+| v3.5.5 | 90% | 95% | 官方文档 和 css88翻译 |
 
 ## 目录
 
@@ -418,7 +419,7 @@ jsdoc path/to/src -c path/to/conf.json
     "tutorials": "./tutorials", // 包含的tutorial文档
     "destination": "./docs", // 输出地址
     "recurse": true, // 是否递归检索目录
-    "verbose": true, // 
+    "verbose": true, //
   },
   "source": { // 需要生成的注释的文件及目录
 	"include": [ "./src" ], // 需要生成的
@@ -433,7 +434,7 @@ jsdoc path/to/src -c path/to/conf.json
     ]
   },
   "templates": { // 模板配置
-    "cleverLinks": false, // 
+    "cleverLinks": false, //
     "monospaceLinks": false, // @link是否使用等宽字体
     "default": { // 默认配置
       "useLongnameInNav": true, // 是否使用长文件名
@@ -471,8 +472,8 @@ jsdoc path/to/src -c path/to/conf.json
     ]
   },
   "docdash": { // docdash 模板自定义配置项
-    "static": false,
-    "sort": false
+    "static": false, // 是否输出静态成员
+    "sort": false // 是否对api名称进行排序
   }
 }
 ```
